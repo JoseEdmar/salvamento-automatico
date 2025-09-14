@@ -2,6 +2,7 @@
 # Aperte CTRL + ALT + N para rodar
 import pyautogui as pa
 import time
+import pyperclip
 from ids_e_comentario import ids, comentario_fixo
 
 pa.PAUSE = 4
@@ -13,12 +14,13 @@ pa.PAUSE = 4
 pa.click(x=1915, y=1050)
 pa.click(x=37, y=536)
 pa.press('ENTER')
+
 #pa.hotkey('win', 'up')
 pa.press('win')
 pa.write('firefox')
 pa.press('ENTER')
 #pa.hotkey('win', 'up')
-pa.write('seu site aqui')
+pa.write('SEU SITE AQUI')
 pa.press('ENTER')
 pa.click(x=1219, y=568)
 pa.click(x=519, y=325)
@@ -44,8 +46,9 @@ for id_atual in ids:
 
     # escrever comentário
     pa.click(x=523, y=390)
-    pa.write(comentario_fixo)
-
+    pyperclip.copy(comentario_fixo)
+    pa.hotkey('ctrl', 'v')  # selecionar tudo
+    
     # selecionar documento do cadastro
     pa.click(x=423, y=480)
     pa.click(x=236, y=211)

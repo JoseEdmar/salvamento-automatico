@@ -2,4 +2,4 @@
 ids = ['20313', '20313', '20313']
 
 # Comentário fixo
-comentario_fixo = 'teste de comentário fixo para todos os ids'
+comentario_fixo = 'Teste de comentário automático com acentuação: ã, é, í, ó, ú, ç.'
