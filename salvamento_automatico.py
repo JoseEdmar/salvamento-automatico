@@ -5,7 +5,7 @@ import time
 import pyperclip
 from ids_e_comentario import ids, comentario_fixo
 
-pa.PAUSE = 4
+pa.PAUSE = 5  # pausa entre os comandos
 
 # lista de IDs para processar (Vem do arquivo ids_e_cometario.py)
 # ---------------------------------------------------
@@ -17,7 +17,7 @@ pa.press('ENTER')
 
 #pa.hotkey('win', 'up')
 pa.press('win')
-pa.write('firefox')
+pa.write('SEU NAVEGADOR AQUI')
 pa.press('ENTER')
 #pa.hotkey('win', 'up')
 pa.write('SEU SITE AQUI')

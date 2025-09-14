@@ -1,5 +1,5 @@
 # Lista de IDs a processar
-ids = ['20313', '20313', '20313']
+ids = ['IDS A SEREM PROCESSADOS']
 
 # Comentário fixo
 comentario_fixo = 'Teste de comentário automático com acentuação: ã, é, í, ó, ú, ç.'
